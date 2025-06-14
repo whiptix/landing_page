@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
+  basePath: '/landing_page',
+  reactStrictMode: true,
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -9,8 +12,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: "/landing_page",
-  output: "export"
+  
 }
 
 export default nextConfig
