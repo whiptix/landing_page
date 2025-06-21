@@ -79,7 +79,7 @@ export default function Home() {
                 </div>
               </div>
               <Image
-                src="/landing_page/landing1.svg?height=550&width=550"
+                src="landing1.svg?height=550&width=550"
                 width={550}
                 height={550}
                 alt="Hero Image"

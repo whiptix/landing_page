@@ -1,8 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
-  basePath: '/landing_page',
-  assetPrefix: '/landing_page',
+  output: 'standalone',
+  distDir: 'build',
+  i18n: {
+    locales: ['en'],
+    defaultLocale: 'en',
+  },
+
   trailingSlash: true,
   reactStrictMode: true,
   eslint: {
