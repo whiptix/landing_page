@@ -25,14 +25,14 @@ export default function Home() {
                 Services
               </Link>
               
-              <Link
-                href="#about"
+              {/* <Link
+                href="/about"
                 className="flex items-center text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
               >
                 About 
               </Link>
                <Link
-                href="#case-studies"
+                href="/case-studies"
                 className="flex items-center text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
               >
                 Case Studies
@@ -42,7 +42,7 @@ export default function Home() {
                 className="flex items-center text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
               >
                 Testimonials
-              </Link>
+              </Link> */}
             </nav>
           </div>
           <div></div>
