@@ -10,20 +10,21 @@ import { MobileNav } from "@/components/mobile-nav"
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
-      <header className="sticky top-0 z-40 w-full border-b bg-white">
-        <div className="container flex h-16 items-center justify-between">
+      <header className="sticky top-0 z-40 w-full bg-white border-b border-indigo-500/50">
+        <div className=" flex h-16 w-full justify-around px-4 md:px-6 lg:px-8">
           <div className="flex items-center gap-6 md:gap-10">
             <Link href="/" className="flex items-center space-x-2">
-              {/* <span className="font-bold text-xl">Thamani Crew</span> */}
-              <Image src="/thamani_crew_logo_v1.svg" alt="Logo" width={150} height={60} /> 
+              {/*<span className="font-bold text-xl">Thamani Crew</span>  */}
+              <Image src="/thamani_crew_logo_v1.svg" alt="Thamani Crew Logo" width={150} height={60} /> 
             </Link>
             <nav className="hidden md:flex gap-6">
-              {/* <Link
+               <Link
                 href="#services"
                 className="flex items-center text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
               >
                 Services
               </Link>
+              
               <Link
                 href="#about"
                 className="flex items-center text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
@@ -41,23 +42,24 @@ export default function Home() {
                 className="flex items-center text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
               >
                 Testimonials
-              </Link> */}
+              </Link>
             </nav>
           </div>
+          <div></div>
           <div className="flex items-center gap-4">
-            {/* <MobileNav />
+            <MobileNav />
             <Button asChild className="hidden md:flex">
               <Link href="#contact">
                 Contact Us <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
-            </Button> */}
+            </Button>
           </div>
         </div>
       </header>
       <main className="flex-1">
         {/* w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-gradient-to-r from-slate-50 to-slate-100 */}
         <section className="w-full py-6 bg-gradient-to-r from-slate-50 to-slate-100"> 
-          <div className="container px-4 md:px-6">
+          <div className="container mx-auto px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
@@ -91,7 +93,7 @@ export default function Home() {
           </div>
         </section>
         <section id="services" className="w-full py-4 md:py-6 lg:py-8 bg-white">
-          <div className="container px-4 md:px-6">
+          <div className="container mx-auto px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-slate-100 px-3 py-1 text-sm">Our Services</div>
@@ -129,7 +131,7 @@ export default function Home() {
           </div>
         </section>
         <section className="w-full py-4 md:py-6 lg:py-8 bg-slate-900 text-white">
-          <div className="container px-4 md:px-6">
+          <div className="container mx-auto px-4 md:px-6">
             <div className="grid gap-10 px-10 md:gap-16 lg:grid-cols-2">
               <div className="space-y-4">
                 <div className="inline-block rounded-lg bg-slate-800 px-3 py-1 text-sm">Our Approach</div>
@@ -197,7 +199,7 @@ export default function Home() {
         </section>
       </main>
       <footer className="w-full border-t bg-slate-900 text-slate-200">
-        <div className="container flex flex-col items-center justify-center gap-4 py-10 md:h-24 md:flex-row md:py-0">
+        <div className="container mx-auto flex flex-col items-center justify-center gap-4 py-10 md:h-24 md:flex-row md:py-0">
           <div className="flex flex-col items-center gap-4 px-8 md:flex-row md:gap-2 md:px-0">
             <p className="text-center text-sm leading-loose md:text-left">
               &copy; {new Date().getFullYear()} ThamaniCrew. All rights reserved.
