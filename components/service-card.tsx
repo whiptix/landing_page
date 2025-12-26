@@ -18,8 +18,8 @@ export function ServiceCard({ title, description, icon }: ServiceCardProps) {
         {icon === "settings" && <Settings className="h-6 w-6" />}
       </div>
       <div className="space-y-2 text-center">
-        <h3 className="font-bold">{title}</h3>
-        <p className="text-sm text-muted-foreground">{description}</p>
+        <h3 className="text-xl font-bold">{title}</h3>
+        <p className="text-xl text-muted-foreground">{description}</p>
       </div>
     </div>
   )

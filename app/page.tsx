@@ -20,16 +20,16 @@ export default function Home() {
             <nav className="hidden md:flex gap-6">
                <Link
                 href="#services"
-                className="flex items-center text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+                className="flex items-center text-xl  text-muted-foreground transition-colors hover:text-primary"
               >
                 Solutions
               </Link>
               
                <Link
                 href="#about"
-                className="flex items-center text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+                className="flex items-center text-xl text-muted-foreground transition-colors hover:text-primary"
               >
-                About Us
+                Contact Us
               </Link>
               {/*
                <Link
@@ -76,7 +76,7 @@ export default function Home() {
                     </Link>
                   </Button> */}
                   <Button variant="outline" size="lg">
-                    <Link href="#services">Explore Solutions</Link>
+                    <Link href="#services" className="text-xl">Explore Solutions</Link>
                   </Button>
                 </div>
               </div>
@@ -102,7 +102,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-4 lg:gap-12">
+            <div className="mx-auto grid  items-center gap-6 py-6 lg:grid-cols-4 lg:gap-12">
               <ServiceCard
                 title="Strategic Consulting"
                 description="Expert guidance to optimize your business operations and achieve sustainable growth."
@@ -117,7 +117,7 @@ export default function Home() {
 
               <ServiceCard
                 title="Business Intelligence"
-                description="Comprehensive data analysis to inform strategic decision-making and drive business success."
+                description="Comprehensive data analysis to inform strategic decision-making."
                 icon="barChart"
               />
               <ServiceCard
