@@ -55,7 +55,8 @@ export default function Home() {
         </div>
       </header>
       <main className="flex-1">
-        <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-gradient-to-r from-slate-50 to-slate-100 ">
+        {/* w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-gradient-to-r from-slate-50 to-slate-100 */}
+        <section className="w-full py-6 bg-gradient-to-r from-slate-50 to-slate-100"> 
           <div className="container px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
               <div className="flex flex-col justify-center space-y-4">
@@ -80,17 +81,16 @@ export default function Home() {
                 </div>
               </div>
               <Image
-                src="landing1.svg?height=550&width=550"
-                width={550}
-                height={550}
+                src="landing1.svg?height=350&width=350"
+                width={350}
+                height={350}
                 alt="Hero Image"
                 className="mx-auto aspect-square overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
               />
             </div>
           </div>
         </section>
-
-        <section id="services" className="w-full py-12 md:py-24 lg:py-32 bg-white">
+        <section id="services" className="w-full py-4 md:py-6 lg:py-8 bg-white">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
@@ -128,9 +128,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-slate-900 text-white">
+        <section className="w-full py-4 md:py-6 lg:py-8 bg-slate-900 text-white">
           <div className="container px-4 md:px-6">
             <div className="grid gap-10 px-10 md:gap-16 lg:grid-cols-2">
               <div className="space-y-4">
