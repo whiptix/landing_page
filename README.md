@@ -1,4 +1,4 @@
-# Thamani Crew Blue Prints
+# Thamani Crew Blue Print
 This is a blue print of what thamani crew proposes as a value to our customers.
 Thamani crew would offer the following services to their customers
 1. Digital Transformation.
