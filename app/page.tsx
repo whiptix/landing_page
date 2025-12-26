@@ -10,11 +10,12 @@ import { MobileNav } from "@/components/mobile-nav"
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
-      <header className="sticky top-0 z-40 w-full border-b bg-background">
+      <header className="sticky top-0 z-40 w-full border-b bg-white">
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-6 md:gap-10">
             <Link href="/" className="flex items-center space-x-2">
-              <span className="font-bold text-xl">Thamani Crew</span>
+              {/* <span className="font-bold text-xl">Thamani Crew</span> */}
+              <Image src="/thamani_crew_logo_v1.svg" alt="Logo" width={150} height={60} /> 
             </Link>
             <nav className="hidden md:flex gap-6">
               {/* <Link
@@ -54,7 +55,7 @@ export default function Home() {
         </div>
       </header>
       <main className="flex-1">
-        <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-gradient-to-r from-slate-50 to-slate-100">
+        <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-gradient-to-r from-slate-50 to-slate-100 ">
           <div className="container px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
               <div className="flex flex-col justify-center space-y-4">
@@ -101,7 +102,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-3 lg:gap-12">
+            <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-4 lg:gap-12">
               <ServiceCard
                 title="Strategic Consulting"
                 description="Expert guidance to optimize your business operations and achieve sustainable growth."
@@ -112,20 +113,12 @@ export default function Home() {
                 description="Modernize your business with cutting-edge digital solutions and technologies."
                 icon="code"
               />
+
+
               <ServiceCard
-                title="Market Analysis"
-                description="In-depth research and insights to help you understand your market and competitors."
+                title="Business Intelligence"
+                description="Comprehensive data analysis to inform strategic decision-making and drive business success."
                 icon="barChart"
-              />
-              <ServiceCard
-                title="Brand Development"
-                description="Create a compelling brand identity that resonates with your target audience."
-                icon="palette"
-              />
-              <ServiceCard
-                title="Financial Planning"
-                description="Comprehensive financial strategies to maximize profitability and minimize risk."
-                icon="dollarSign"
               />
               <ServiceCard
                 title="Operational Excellence"

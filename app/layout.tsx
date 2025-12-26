@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: 'Thamani Crew',
   description: 'Thamani Crew',
   generator: 'Thamani Crew',
+  icons: {
+    icon: "/favicon.ico",
+  },
 }
 
 export default function RootLayout({
