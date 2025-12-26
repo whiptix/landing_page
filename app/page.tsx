@@ -22,15 +22,16 @@ export default function Home() {
                 href="#services"
                 className="flex items-center text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
               >
-                Services
+                Solutions
               </Link>
               
-              {/* <Link
-                href="/about"
+               <Link
+                href="#about"
                 className="flex items-center text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
               >
-                About 
+                About Us
               </Link>
+              {/*
                <Link
                 href="/case-studies"
                 className="flex items-center text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
@@ -48,11 +49,8 @@ export default function Home() {
           <div></div>
           <div className="flex items-center gap-4">
             <MobileNav />
-            <Button asChild className="hidden md:flex">
-              <Link href="#contact">
-                Contact Us <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            </Button>
+           
+            
           </div>
         </div>
       </header>
@@ -78,7 +76,7 @@ export default function Home() {
                     </Link>
                   </Button> */}
                   <Button variant="outline" size="lg">
-                    <Link href="#services">Explore Services</Link>
+                    <Link href="#services">Explore Solutions</Link>
                   </Button>
                 </div>
               </div>
@@ -130,7 +128,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="w-full py-4 md:py-6 lg:py-8 bg-slate-900 text-white">
+        <section id="about" className="w-full py-4 md:py-6 lg:py-8 bg-slate-900 text-white">
           <div className="container mx-auto px-4 md:px-6">
             <div className="grid gap-10 px-10 md:gap-16 lg:grid-cols-2">
               <div className="space-y-4">
@@ -143,57 +141,19 @@ export default function Home() {
                   business outcomes. Our methodical approach ensures that every recommendation is backed by data and
                   aligned with your business objectives.
                 </p>
-                {/* <Button
-                  asChild
-                  size="lg"
-                  variant="outline"
-                  className="mt-4 bg-transparent text-white hover:bg-slate-800"
-                >
-                  <Link href="#contact">
-                    Schedule a Consultation <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button> */}
+                 
               </div>
               <div className="flex flex-col items-start space-y-4">
-                <div className="grid w-full gap-6">
-                  <div className="flex items-center gap-4">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-slate-800 text-white">
-                      1
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold">Discovery</h3>
-                      <p className="text-slate-300">Understanding your business, goals, and challenges</p>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-4">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-slate-800 text-white">
-                      2
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold">Analysis</h3>
-                      <p className="text-slate-300">Data-driven research and competitive assessment</p>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-4">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-slate-800 text-white">
-                      3
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold">Strategy</h3>
-                      <p className="text-slate-300">Developing tailored solutions and implementation plans</p>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-4">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-slate-800 text-white">
-                      4
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold">Execution</h3>
-                      <p className="text-slate-300">Implementing strategies with ongoing optimization</p>
-                    </div>
-                  </div>
+                <div className="contact-info">
+                  <div className="inline-block rounded-lg bg-slate-800 px-3 py-1 text-sm">Contacts</div>
+                  <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Contact Us</h2>
+                  <p>Have a question or need more information? We’re here to help.</p>
+                  <p><strong>Email:</strong> info@thamanicrew.com</p>
+                  <p><strong>Phone:</strong> (254) 794-535-947</p>
+                  <p><strong>Location:</strong> Nairobi, Kenya</p>
                 </div>
               </div>
+
             </div>
           </div>
         </section>
@@ -205,17 +165,6 @@ export default function Home() {
               &copy; {new Date().getFullYear()} ThamaniCrew. All rights reserved.
             </p>
           </div>
-          <nav className="flex gap-4 sm:gap-6">
-            {/* <Link href="#" className="text-sm hover:underline underline-offset-4">
-              Terms
-            </Link>
-            <Link href="#" className="text-sm hover:underline underline-offset-4">
-              Privacy
-            </Link>
-            <Link href="#" className="text-sm hover:underline underline-offset-4">
-              Cookies
-            </Link> */}
-          </nav>
         </div>
       </footer>
     </div>
