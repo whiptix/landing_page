@@ -36,7 +36,7 @@ export function Navigation() {
             <Link href="#contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
               Contact
             </Link>
-            <Button size="sm" className="bg-primary text-primary-foreground hover:bg-accent">
+            <Button size="sm" className="bg-primary text-primary-foreground hover:bg-accent" onClick={() => window.location.href = "/#contact"}>
               Get Started
             </Button>
           </div>
