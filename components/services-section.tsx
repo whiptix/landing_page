@@ -7,23 +7,27 @@ const services = [
     title: "Strategic Consulting",
     description:
       "Expert guidance to optimize your business operations and achieve sustainable growth through proven methodologies.",
+    link: "/strategic-consulting",
   },
   {
     icon: Cpu,
     title: "Digital Transformation",
     description:
       "Modernize your business with cutting-edge digital solutions and technologies that enhance efficiency.",
+    link: "/digital-transformation",
   },
   {
     icon: BarChart3,
     title: "Business Intelligence",
     description:
       "Comprehensive data analysis and insights to inform strategic decision-making and drive competitive advantage.",
+    link: "/business-intelligence",
   },
   {
     icon: TrendingUp,
     title: "Operational Excellence",
     description: "Streamline your operations to increase efficiency, reduce costs, and maximize profitability.",
+    link: "/operational-excellence",
   },
 ]
 
@@ -46,15 +50,17 @@ export function ServicesSection() {
           {services.map((service, index) => {
             const Icon = service.icon
             return (
-              <Card key={index} className="p-8 bg-card border-border hover:shadow-lg transition-shadow">
-                <div className="space-y-4">
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                    <Icon className="h-6 w-6 text-primary" />
+              <a key={index} href={service.link} className="block cursor-pointer group">
+                <Card className="p-8 bg-card border-border hover:shadow-lg transition-all h-full group-hover:border-primary/50">
+                  <div className="space-y-4">
+                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                      <Icon className="h-6 w-6 text-primary" />
+                    </div>
+                    <h3 className="text-xl font-medium text-foreground">{service.title}</h3>
+                    <p className="text-muted-foreground leading-relaxed">{service.description}</p>
                   </div>
-                  <h3 className="text-xl font-medium text-foreground">{service.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed">{service.description}</p>
-                </div>
-              </Card>
+                </Card>
+              </a>
             )
           })}
         </div>
