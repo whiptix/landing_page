@@ -7,7 +7,7 @@ export function ApproachSection() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Image */}
           <div className="order-2 lg:order-1 relative h-[500px] rounded-lg overflow-hidden">
-            <Image src="/data-analysis-charts-business-strategy.jpg" alt="Data-driven business approach" fill className="object-cover" />
+            <Image src="/approach.svg" alt="Data-driven business approach" fill className="object-cover" />
           </div>
 
           {/* Content */}
