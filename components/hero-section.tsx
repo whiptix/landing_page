@@ -21,16 +21,26 @@ export function HeroSection() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-accent group">
+              <Button
+              asChild
+              size="lg"
+              className="bg-primary text-primary-foreground hover:bg-secondary group"
+            >
+              <a href="#approach">
                 Explore Our Approach
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-              </Button>
+              </a>
+            </Button>
               <Button
+                asChild
                 size="lg"
                 variant="outline"
                 className="border-border text-foreground hover:bg-secondary bg-transparent"
+                
               >
+                <a href="#approach">
                 Contact Us
+                </a>
               </Button>
             </div>
           </div>
